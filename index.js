@@ -94,7 +94,7 @@
         let index = this;
         
         let getFileName = (id) => {
-            return index.url + "/file_" + ("00000" + id).slice(-5) + ".pc";
+            return index.url + "/file_" + ("00000" + id).slice(-5) + ".pc?date=" + Date.now();
         };
         
         let pokemon = index.pokemons[id - 1];
